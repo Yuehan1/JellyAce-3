@@ -1,0 +1,32 @@
+<html>
+<body>
+ <div class="wrapper">
+ <div class="container">
+     <p id="question">Mahal mo ba ako?</p>
+     <button class"btn" id="yes">Yes</button>
+     <button class"btn" id="no">No</button>
+  </div>
+  </div>
+
+
+
+</body>
+
+
+<script>
+ const noBtn = document.getElementById('no');
+ const yesBtn = document.getElementById('yes');
+ const ques = document.getElementById('question');
+
+   noBtn.addElementListener("click", ()=>{
+         let rand =Math.floor(Math.random() * (500 - 100)  + 1 );
+         let rand2 =Math.floor(Math.random() * (-300 - 100)  + 1 );
+         noBtn.style.transform = "translate("+rand+"px," +rand+ "px)";
+});
+
+yesBtn.addEventListener("click", ()=>{
+
+ques.innerHTML = "I LOVE YOU TOO <3"
+})
+</script>
+</html>
